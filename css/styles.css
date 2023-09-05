@@ -16,9 +16,37 @@ a {
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+img {
+    display: block;
 }
 button {
     font-family: inherit;
+}
+.visually-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.section {
+    padding: 60px 0;
+}
+.conteiner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 .logo {
     color: var(--c-primary-brand);
@@ -29,7 +57,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
    }
-   .logo-accent {
+.logo-accent {
     color: var(--c-primary);
    }
 .address-link {
@@ -66,6 +94,7 @@ button {
 }
 .hero-section {
     background-color: var(--c-primary);
+    padding: 60px 0;
 }
 .hero-title {
     color: var(--c-background);
@@ -74,6 +103,8 @@ button {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
 }
 .hero-button {
     color: var(--c-background);
@@ -92,7 +123,8 @@ button {
     background-color: var(--c-pressed-state);
 }
 .feature-section {
-    background-color: var(--c-text-light);
+    background-color: var(--c-background);
+    padding: 60px 0;
 }
 .list {
     background-color: var(--c-background);
@@ -102,7 +134,8 @@ button {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em; 
+    margin-bottom: 8px;  
 }
 .list-text {
     color: var(--c-text);
@@ -112,6 +145,7 @@ button {
 }
 .team-section {
     background-color: var(--c-text-light);
+    padding: 60px 0;
 }
 .team-member {
     background-color: var(--c-background);
@@ -162,6 +196,7 @@ button {
 }
 .footer-section {
     background-color: var(--c-primary);
+    padding: 60px 0;
 }
 .logo-footer {
     color: var(--c-primary-brand);
